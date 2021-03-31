@@ -1,5 +1,8 @@
 body {
   background-color: blanchedalmond;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-medium);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,20 +17,21 @@ h2 {
   color: rgb(82, 7, 7);
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 27px;
+  font-size: 25px;
   text-transform: uppercase;
 }
 h4 {
   color: #4bbd90;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-family: serif;
+  font-size: 17px;
 }
+
 h5 {
-  color: rgb(20, 18, 18);
-  text-align: left;
+  color: rgb(32, 30, 30);
+  text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 .welcome {
   background-color: azure;
@@ -37,18 +41,40 @@ h5 {
 }
 
 /*product*/
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   margin-top: 50px;
-  grid-column-gap: 50px;
+  grid-column-gap: 20px;
 }
 
 .grid-item {
   font-size: 30px;
   text-align: center;
 }
+@media (min-width: 1px) {
+  .grid-container {
+    display: block;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container {
+    max-width: 1140px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .img:hover {
   color: #000;
 }
@@ -58,8 +84,9 @@ img {
   border-radius: 4px;
   padding: 5px;
   border-radius: 1px;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: var(--space-small);
 }
 
 img:hover {

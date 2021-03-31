@@ -7,15 +7,16 @@
 }
 
 .main a {
-  margin-left: 20px;
+  margin-left: 10px;
   text-align: left;
-  color: #7a5257;
+  color: #27793f;
   text-decoration: none;
-  font-size: 19px;
-  padding: 10px;
+  font-size: 15px;
+  padding: 1px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .main a:hover {
-  color: rgb(32, 180, 206);
+  color: rgb(66, 201, 178);
 }
 .text {
   float: right;
